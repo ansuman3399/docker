@@ -8,3 +8,4 @@ before_install:
 
 script:
     - docker run ansumanm20/docker-react npm run test
+    

@@ -14,4 +14,11 @@ deploy:
     region: "us-east-2"
     app: "sample-docker-app"
     env: "docker-env"
-     
+    bucket_name: "elasticbeanstalk-us-west-2-306474427547"
+    bucket_path: "sample-docker-app"
+    on:
+        branch: master
+    #AWS access keys are to be stored in the travis ci envirnment as env variables.
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: 
+        secure: "$AWS_SECRET_KEY"

@@ -4,7 +4,7 @@ COPY package.json .
 RUN npm install
 COPY . .
 RUN npm run build
-#build folder will be created insode the path /app/build
+#build folder will be created inside the path /app/build
 
 FROM nginx
 EXPOSE 80

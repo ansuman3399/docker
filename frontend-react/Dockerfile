@@ -7,6 +7,7 @@ RUN npm run build
 #build folder will be created inside the path /app/build
 
 #Phase 2
+#Nginx configuration
 FROM nginx
 EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
